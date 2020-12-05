@@ -1,0 +1,7 @@
+django-admin startproject profiles_project .
+python3 manage.py startapp profiles_api
+### para migrar bases de datos, cuando se cambia el archivo models.py
+python3 manage.py makemigrations profiles_api
+python3 manage.py migrate
+### crear super usuario
+python3 manage.py createsuperuser
